@@ -70,10 +70,19 @@ body {
 }
 
 /* CARDS */
-.cards {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
 }
 
 .card {
