@@ -98,6 +98,11 @@ body {
 .lista {
     list-style: none;
     padding: 0;
+    .lista {
+    max-width: 600px;
+    margin: auto;
+}
+
 }
 
 .lista li {
@@ -107,9 +112,12 @@ body {
 /* FOOTER */
 .footer {
     background-color: #111;
-    color: white;
+    color: #aaa;
     text-align: center;
-    padding: 15px;
+    padding: 20px;
+    font-size: 14px;
+}
+
 }
 
 /* RESPONSIVE */
@@ -126,5 +134,10 @@ body {
     .cards {
         flex-direction: column;
     }
+}
+h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
