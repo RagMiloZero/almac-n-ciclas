@@ -1,102 +1,105 @@
-/* ESTILO GENERAL */
+/* GENERAL */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
     color: #333;
+    background-color: #ffffff;
 }
 
 /* HEADER */
-header {
-    background-color: #1f1f1f;
-    color: white;
-    padding: 15px;
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px 20px;
+    background-color: #111;
+    color: white;
 }
 
-nav a {
+.menu a {
     color: white;
     margin-left: 15px;
     text-decoration: none;
     font-weight: bold;
 }
 
-nav a:hover {
-    text-decoration: underline;
+/* HERO */
+.hero {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+    color: white;
+}
+
+.btn-principal {
+    margin-top: 20px;
+    padding: 14px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #111;
+    color: white;
+    cursor: not-allowed;
 }
 
 /* SECCIONES */
-.bloque {
-    background-color: white;
-    margin: 20px;
+.seccion {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.fondo-gris {
+    background-color: #f5f5f5;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 250px;
+    border: 1px solid #ddd;
     padding: 20px;
     border-radius: 8px;
+    text-align: center;
 }
 
-/* BOTÓN WHATSAPP */
-.btn-whatsapp {
-    display: inline-block;
-    background-color: #25D366;
-    color: white;
-    padding: 12px 20px;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
+/* LISTA */
+.lista {
+    list-style: none;
+    padding: 0;
 }
 
-.btn-whatsapp:hover {
-    background-color: #1ebd5a;
+.lista li {
+    margin: 10px 0;
 }
 
 /* FOOTER */
-footer {
-    background-color: #1f1f1f;
+.footer {
+    background-color: #111;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
 }
- @media (max-width: 768px) {
 
-    header {
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .header {
         flex-direction: column;
         text-align: center;
     }
 
-    nav {
+    .menu {
         margin-top: 10px;
     }
 
-    nav a {
-        display: inline-block;
-        margin: 10px;
+    .cards {
+        flex-direction: column;
     }
-
 }
-@media (max-width: 768px) {
 
-    .bloque {
-        margin: 10px;
-        padding: 15px;
-    }
-
-    h1 {
-        font-size: 24px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-}
-@media (max-width: 768px) {
-
-    .btn-whatsapp {
-        display: block;
-        width: 100%;
-        text-align: center;
-        font-size: 18px;
-    }
-
-}
