@@ -1,0 +1,102 @@
+/* ESTILO GENERAL */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background-color: #1f1f1f;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* SECCIONES */
+.bloque {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* BOTÓN WHATSAPP */
+.btn-whatsapp {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1ebd5a;
+}
+
+/* FOOTER */
+footer {
+    background-color: #1f1f1f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+ @media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 10px;
+    }
+
+}
+@media (max-width: 768px) {
+
+    .bloque {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+}
+@media (max-width: 768px) {
+
+    .btn-whatsapp {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+    }
+
+}
